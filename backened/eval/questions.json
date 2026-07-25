@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is the maximum time allowed for an L1 analyst to acknowledge a critical alert?",
+    "expected_answer": "15 minutes",
+    "expected_source": "soc_triage_guidelines.pdf"
+  },
+  {
+    "question": "What type of incident triggers a mandatory escalation to an L2 analyst?",
+    "expected_answer": "Suspected lateral movement",
+    "expected_source": "soc_triage_guidelines.pdf"
+  },
+  {
+    "question": "What time limit is set for escalating lateral movement to L2?",
+    "expected_answer": "Within 30 minutes",
+    "expected_source": "soc_triage_guidelines.pdf"
+  },
+  {
+    "question": "Which terminology standard must be followed for initial triage reporting?",
+    "expected_answer": "CompTIA Security+ incident response life cycle terminology",
+    "expected_source": "soc_triage_guidelines.pdf"
+  },
+  {
+    "question": "What must be done before tuning a rule for repeated false positives?",
+    "expected_answer": "It must be documented in the exception tracker",
+    "expected_source": "soc_triage_guidelines.pdf"
+  },
+  {
+    "question": "Where must all endpoint logs be ingested?",
+    "expected_answer": "Microsoft Sentinel using the designated Log Analytics Workspace",
+    "expected_source": "detection_engineering_lab.pdf"
+  },
+  {
+    "question": "Which specific Event IDs must be enabled in the Sysmon configuration?",
+    "expected_answer": "Event ID 1 and Event ID 3",
+    "expected_source": "detection_engineering_lab.pdf"
+  },
+  {
+    "question": "What activity does Sysmon Event ID 1 track?",
+    "expected_answer": "Process Creation",
+    "expected_source": "detection_engineering_lab.pdf"
+  },
+  {
+    "question": "What activity does Sysmon Event ID 3 track?",
+    "expected_answer": "Network Connection",
+    "expected_source": "detection_engineering_lab.pdf"
+  },
+  {
+    "question": "Where is Atomic Red Team permitted to be executed?",
+    "expected_answer": "In a dedicated, isolated sandbox environment",
+    "expected_source": "detection_engineering_lab.pdf"
+  },
+  {
+    "question": "Is Atomic Red Team allowed to run in the production environment?",
+    "expected_answer": "No, it is never permitted in production",
+    "expected_source": "detection_engineering_lab.pdf"
+  },
+  {
+    "question": "How long is raw endpoint telemetry retained in hot storage?",
+    "expected_answer": "90 days",
+    "expected_source": "detection_engineering_lab.pdf"
+  },
+  {
+    "question": "Which algorithm is required for lightweight authenticated encryption on IoT devices?",
+    "expected_answer": "ASCON",
+    "expected_source": "iot_security_framework.pdf"
+  },
+  {
+    "question": "What is the designated use case for Elliptic Curve Cryptography in this framework?",
+    "expected_answer": "Secure key exchange protocols",
+    "expected_source": "iot_security_framework.pdf"
+  },
+  {
+    "question": "Why is a pure ECC model strictly prohibited for all communication phases?",
+    "expected_answer": "Due to excessive computational overhead",
+    "expected_source": "iot_security_framework.pdf"
+  },
+  {
+    "question": "What is the primary performance goal of the hybrid ASCON-ECC framework?",
+    "expected_answer": "To reduce device battery consumption by 30%",
+    "expected_source": "iot_security_framework.pdf"
+  },
+  {
+    "question": "Which legacy deployment is the hybrid cryptography framework compared against for battery consumption?",
+    "expected_answer": "Legacy AES deployments",
+    "expected_source": "iot_security_framework.pdf"
+  },
+  {
+    "question": "According to the policies, what type of devices are considered resource-constrained?",
+    "expected_answer": "IoT devices",
+    "expected_source": "iot_security_framework.pdf"
+  },
+  {
+    "question": "What happens to endpoint telemetry after 90 days?",
+    "expected_answer": "It is archived",
+    "expected_source": "detection_engineering_lab.pdf"
+  },
+  {
+    "question": "Which specific analysts are tasked with acknowledging critical alerts within 15 minutes?",
+    "expected_answer": "L1 analysts",
+    "expected_source": "soc_triage_guidelines.pdf"
+  }
+]
