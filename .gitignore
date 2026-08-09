@@ -1,0 +1,3 @@
+#ignoring the .env file, it contains secret of  the projects
+.env
+
