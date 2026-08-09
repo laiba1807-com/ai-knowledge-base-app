@@ -13,7 +13,7 @@ def retrieve_top_k(question_embedding: list[float], chunk_embeddings: list[list[
 
 
 	# Sort by similarity score in descending order
-	similarities.sort(key=lambda x: x[0], reverse=True)
+	similarities.sort(key=lambda x:x[0], reverse=True)
 
 	#Return the top k matching chunks[cite: 1]
 	return [chunk for sim, chunk in similarities[:k]]
