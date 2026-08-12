@@ -1,3 +1,4 @@
+from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.models.chunk import Chunk
@@ -28,3 +29,16 @@ class ChunkRepository:
         self.session.flush()
 
         return chunk
+
+    def similarity_search(
+        self,
+        embedding: list[float],
+        limit: int = 5,
+    ) -> list[Chunk]:
+        stmt = (
+            select(Chunk)
+            .order_by(Chunk.embedding.cosine_distance(embedding))
+            .limit(limit)
+        )
+
+        return list(self.session.scalars(stmt).all())
